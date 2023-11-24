@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku 1</title>
+    <style>
+      div#baslik{
+        text-align: center;
+      }
+      div#icerik{
+        width: 36%;
+        margin: auto;
+        height: 450px;
+        border: 2px double black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgb(255, 128, 128);
+       
+      }
+      div.buyukKutu{
+        background-color: black;
+        text-align: center;
+        display: flex;
+        padding: 1px;
+        width: 138px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+      }
+      div.kucukKutu{
+        width: 30px;
+        height: 30px;
+        background-color: whitesmoke;
+        margin: 1px;
+        padding: 7px;
+        text-align: center;
+      }
+      div.kucukKutu span{
+        margin-top: auto;
+        margin-bottom: auto;
+        text-shadow: 2px;
+        font-size: x-large;            
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="baslik">
+      <h2>Sudoku</h2>
+    </div>
+    <div id="icerik">
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>5</span></div>
+      </div>
+      <div class="buyukKutu">
+        <div class="kucukKutu"><span>5</span></div>
+        <div class="kucukKutu"><span>8</span></div>
+        <div class="kucukKutu"><span>1</span></div>
+        <div class="kucukKutu"><span>4</span></div>
+        <div class="kucukKutu"><span>6</span></div>
+        <div class="kucukKutu"><span>7</span></div>
+        <div class="kucukKutu"><span>3</span></div>
+        <div class="kucukKutu"><span>9</span></div>
+        <div class="kucukKutu"><span>2</span></div>
+      </div>
+    </div>
+  </body>
+</html>
